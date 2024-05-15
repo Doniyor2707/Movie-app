@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
-import MainLayout from "../layout/main/MainLayout";
-import { Home,TvShows,Details,Suggest } from "../Routes/index";
+import MainLayout from "../layout/mainLayout/MainLayout";
+import { Home,TvShows,Details,Suggest } from "../pages";
 
 const Router = () => {
   return (
