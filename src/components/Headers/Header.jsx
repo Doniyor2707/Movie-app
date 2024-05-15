@@ -1,8 +1,10 @@
 import styles from "../Headers/header.module.css"
-
 const Header = () => {
   return (
-    <div>Headre</div>
+    <div>
+
+      <img src="../../../public/logo.svg" alt="" />
+    </div>
   )
 }
 
