@@ -1,0 +1,30 @@
+{
+  "all": [
+    {
+      "id":1,
+      "star": 6.8,
+      "title":"Black Widow",
+      "imageUrl": "/images/01.jpg"
+    },
+    {
+      "id":2,
+      "star": 7.9,
+      "title":"Shang Chi",
+      "imageUrl": "/images/02.jpg"
+    },
+    {
+      "id":3,
+      "star": 8.4,
+      "title":"Loki",
+      "imageUrl": "/images/03.jpg"
+    },
+    {
+      "id":4,
+      "star": 8.3,
+      "title":"How I Met Your Mother",
+      "imageUrl": "/images/04.jpg"
+    }
+  ],
+  "movies":[],
+  "tvShows":[] 
+}

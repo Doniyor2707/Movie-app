@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
-import MainLayout from "../layout/mainLayout/MainLayout";
-import { Home,TvShows,Details,Suggest } from "../pages";
+import MainLayout from "./layout/mainLayout/MainLayout";
+import { Home,TvShows,Details,Suggest } from "./pages";
 
 const Router = () => {
   return (
@@ -11,7 +11,7 @@ const Router = () => {
             <Route index element = {<Home/>}/>
             <Route path="/details" element = {<Details/>}/>
             <Route path="/tvshows" element = {<TvShows/>}/>
-            <Route path="/suggest" element = {<Suggest/>}/>
+            <Route path="/suggestMe" element = {<Suggest/>}/>
         </Route>
 
         {/* Dashboard.. */}

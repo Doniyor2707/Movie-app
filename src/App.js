@@ -1,6 +1,5 @@
 import React, { Suspense } from "react";
-import MainLayout from "./layout/mainLayout/MainLayout";
-import Router from "./Routes/Router";
+import Router from "./Router";
 import "./App.css";
 
 function App() {

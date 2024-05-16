@@ -1,6 +1,11 @@
+import styles from "./home.module.css";
 
 const Home = () => {
-  return <div >Home</div>;
+  return(
+  <div className="home">
+    
+  </div>
+ );
 };
 
 export default Home;
