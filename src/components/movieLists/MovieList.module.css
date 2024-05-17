@@ -1,0 +1,25 @@
+.moiveTitle {
+  font-family: var(--pr-family);
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 125%;
+  letter-spacing: -0.02em;
+  color: var(--grey-400);
+  margin-bottom: 24px;
+}
+
+.moiveTitle small {
+  font-family: var(--pr-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 125%;
+  color: var(--grey-400);
+}
+
+.movieList {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 2fr));
+  gap: 24px;
+  flex-wrap: wrap;
+}

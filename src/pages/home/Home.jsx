@@ -1,7 +1,8 @@
 import { MainTabs } from "../../components/mainTabs/MainTabs";
 import { SearchBox } from "../../components/searchBox/SearchBox";
 import MyTitle from "../../components/ui/myTitle/MyTitle";
-import styles from "./home.module.css";
+import data from "../../data/data.json"
+import MovieList from "../../components/movieLists/MovieList";
 
 const Home = () => {
 
@@ -33,6 +34,10 @@ const Home = () => {
 
       {/* Tabs */}
       <MainTabs data = {tabsData}/>
+      
+      {/* Savol nimaga data bu joyda berilgan */}
+      {/* MovieList */}
+      <MovieList data={data.all} />
     </div>
   );
 };
