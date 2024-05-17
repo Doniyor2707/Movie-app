@@ -1,0 +1,29 @@
+.mainTabs {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 24px;
+}
+
+.mainTabsItem {
+  padding: 8px;
+  display: flex;
+  border-radius: 12px;
+  backdrop-filter: blur(80px);
+  background: var(--black-20);
+}
+
+.mainTabsItemLink {
+  padding: 8px 32px;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  border-radius: 8px;
+  letter-spacing: 0.02em;
+  color: var(--primary-50);
+}
+
+.mainTabsItem .active {
+  background: var(--primary-400);
+}
