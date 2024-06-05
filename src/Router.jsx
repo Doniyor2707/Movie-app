@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import MainLayout from "./layout/mainLayout/MainLayout";
 import { Home,TvShows,Details,Suggest } from "./pages";
+import { Dashboard } from "./layout/dashboard/Dashboard";
 
 const Router = () => {
   return (
@@ -14,8 +15,10 @@ const Router = () => {
             <Route path="/suggestMe" element = {<Suggest/>}/>
         </Route>
 
-        {/* Dashboard.. */}
-
+        {/* Dashboard */}
+        <Route path="/" element={<Dashboard/>}>
+          <Route path="main" element = {<h1>hello world</h1>}/>
+        </Route>
 
         {/* 404 */}
         <Route path="*" element = {<h1>Page Not Found</h1>}/>

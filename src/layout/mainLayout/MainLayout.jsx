@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom";
-import Headers from "../../components/headers/Header";
+import Headers from "../../components/Headers/Header"
 import styles from "./mainLayout.module.css"
 import { publicRoutes } from "../../constans/path";
 
