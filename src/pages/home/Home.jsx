@@ -1,7 +1,6 @@
 import { MainTabs } from "../../components/mainTabs/MainTabs";
 import { SearchBox } from "../../components/searchBox/SearchBox";
 import MyTitle from "../../components/ui/myTitle/MyTitle";
-import data from "../../data/data.json"
 import MovieList from "../../components/movieLists/MovieList";
 import { useEffect, useState } from "react";
 import axios from "axios";
@@ -30,10 +29,11 @@ const apiKey = "f3432f65452d7797259521cb348f7e3f";
 
 const Home = () => {
 
-  const [palying,setPlaying] = useState({ })
+  const [palying,setPlaying] = useState([])
+  const [activeMovie, setActiveMovie] = useState("all")
 
-  const getNowPlayingMovie = async(movieType) => {
-
+  //API
+  const handleGetMovie = async(movieType) => {
     try {
       const res = await axios.get(
         `https://api.themoviedb.org/3/trending/${movieType}/week?api_key=${apiKey}`);
@@ -51,9 +51,13 @@ const Home = () => {
     // setPlaying(data)
   }
 
-    useEffect(()=> {
-      getNowPlayingMovie();
-    },[])
+    useffect(()=> {
+      handleGetMovie(activeMovie);
+    },[activeMovie])
+
+    const handleTab = (value)=> {
+      setActiveMovie(value)
+    }
 
   return (
     <div className="home">
@@ -64,7 +68,7 @@ const Home = () => {
       <SearchBox/>
 
       {/* Tabs */}
-      <MainTabs data={tabsData}/> 
+      <MainTabs data={tabsData} setValue={handleTab} activeMovie={activeMovie}/> 
       
       {/* MovieList */}
       <MovieList data={palying} />
