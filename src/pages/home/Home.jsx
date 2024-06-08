@@ -51,7 +51,7 @@ const Home = () => {
     // setPlaying(data)
   }
 
-    useffect(()=> {
+    useEffect(()=> {
       handleGetMovie(activeMovie);
     },[activeMovie])
 
