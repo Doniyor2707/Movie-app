@@ -79,6 +79,7 @@
 
 /* Star */
 .detailsStar {
+  display: inline-block;
   border-radius: 8px;
   padding: 4px;
   backdrop-filter: blur(8px);
