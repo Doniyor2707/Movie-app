@@ -13,7 +13,7 @@ const tabsData = [
   {
     key: 2,
     label: "Movies",
-    value: "movies",
+    value: "movie",
   },
   {
     key : 3,
@@ -28,12 +28,17 @@ const apiKey = "f3432f65452d7797259521cb348f7e3f";
 //const nowPlaying = `https://api.themoviedb.org/3/movie/now_playing?api_key=${apiKey}`
 
 const Home = () => {
-
+  //tabs API
   const [palying,setPlaying] = useState([])
+
+  //tabs state
   const [activeMovie, setActiveMovie] = useState("all")
+  const[isLoading,setIsLoading] = useState(false)
 
   //API
   const handleGetMovie = async(movieType) => {
+    setIsLoading(true)
+
     try {
       const res = await axios.get(
         `https://api.themoviedb.org/3/trending/${movieType}/week?api_key=${apiKey}`);
@@ -43,6 +48,8 @@ const Home = () => {
     }
     catch(err) {
         console.error(err);
+    }finally{
+      setIsLoading(false)
     }
 
     // const res = await fetch(nowPlaying);
@@ -50,11 +57,11 @@ const Home = () => {
 
     // setPlaying(data)
   }
-
+    //memorize
     useEffect(()=> {
       handleGetMovie(activeMovie);
     },[activeMovie])
-
+    // tabs value
     const handleTab = (value)=> {
       setActiveMovie(value)
     }

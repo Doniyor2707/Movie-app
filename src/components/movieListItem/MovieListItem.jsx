@@ -1,8 +1,16 @@
+import { useNavigate } from "react-router-dom"
 import styles from "./MovieListItem.module.css"
 
-export default function MovieListItem({title,star,imageUrl}) {
+export default function MovieListItem({title,star,imageUrl,to}) {
+
+  const navigate = useNavigate()
+
+  const hendleNavigate = ()=> {
+    navigate(to)
+  }
+
   return (
-    <div className={styles.movieCard}>
+    <div className={styles.movieCard} onClick={hendleNavigate}>
     {/* Star */}
     <div className={styles.star}>
       <svg

@@ -1,11 +1,13 @@
 import { Link } from "react-router-dom";
+import Logo from "../../../src/assets/logo.svg"
 import styles from "./header.module.css";
+import { publicRoutes } from "../../constans/path";
 
 const Header = ({ data  }) => {
   return (
     <div className={styles.header}>
-      <Link to="/">
-        <img src="logo.svg" alt="Logo" />
+      <Link to={publicRoutes.home}>
+        <img src={Logo} alt="Logo" />
       </Link>
 
       <ul className={styles.headerList}>
