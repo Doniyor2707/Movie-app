@@ -9,6 +9,7 @@ export const publicRoutes = {
   tvShows: "/tvShows",
   details: "/details/:movieId",
   suggestMe: "/suggestMe",
+  authLogin: "/auth/login"
 }
 
 // Private
