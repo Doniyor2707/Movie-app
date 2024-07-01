@@ -5,15 +5,7 @@
 }
 /*  */
 
-.titleItem {
-  margin-bottom: 16px;
-  font-family: var(--font-family);
-  font-weight: 600;
-  font-size: 64px;
-  line-height: 125%;
-  letter-spacing: -0.02em;
-  color: var(--grey-50);
-}
+
 
 
 .titleParagrf {
