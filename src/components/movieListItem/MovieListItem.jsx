@@ -28,7 +28,7 @@ export default function MovieListItem({title,star,imageUrl,to}) {
           strokeLinejoin="round"
         />
       </svg>
-      <span>{star}</span>
+      <span>{Math.round(star * 10) / 10}</span>
     </div>
 
     {/* Image */}

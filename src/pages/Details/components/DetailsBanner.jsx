@@ -73,7 +73,7 @@ const DetailsBanner = ({
                 strokeLinejoin="round"
               />
             </svg>
-            <span>{vote_average}</span>
+            <span>{Math.round(vote_average * 10) / 10}</span>
           </div>
           {/* Details movie Title data */}
           <div className={styles.detailsMovieType}>
