@@ -1,4 +1,4 @@
-import styles from "./detailsBannerTvShows.module.css";
+import styles from "./detailsBanner.module.css";
 
 const DetailsBannerTvShows = ({
   img,
@@ -78,7 +78,7 @@ const DetailsBannerTvShows = ({
           {/* Details movie Title data */}
           <div className={styles.detailsMovieType}>
             Type
-            <div className={styles.detailsMovieData}>Tv Shows</div>
+            <div className={styles.detailsMovieData}>Movie</div>
           </div>
           <div className={styles.detailsMovieType}>
             Release Date:

@@ -6,17 +6,17 @@ import { publicRoutes } from "../../constans/path";
 const MainLayout = () => {
   const headerItems = [
     {
-      key: 0,
+      key: 1,
       title: "Movies",
-      to: publicRoutes.home,
+      to: publicRoutes.movies,
     },
     {
-      key: 1,
+      key: 2,
       title: "TV Shows",
       to: publicRoutes.tvShows,
     },
     {
-      key: 2,
+      key: 3,
       title: (
         <>
           Suggest me &nbsp;

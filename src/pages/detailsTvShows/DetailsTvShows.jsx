@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import { useParams } from "react-router-dom";
 import DetailsBannerTvShows from "./components/DetailsBannerTvShows";
 
@@ -39,15 +39,15 @@ const DetailsTvShows = () => {
   ) : (
     <div>
       <DetailsBannerTvShows
-        title={detailsData.title}
-        overview = {detailsData.overview}
-        vote_average = {detailsData.vote_average}
-        poster_path = {`https://image.tmdb.org/t/p/original${detailsData.poster_path}`}
-        release_date = {detailsData.release_date}
-        runtime = {detailsData.runtime}
-        tagline = {detailsData.tagline}
-        genres = {detailsData.genres}
-        img={`https://image.tmdb.org/t/p/original${detailsData.backdrop_path}`}
+         title={detailsData.title}
+         overview = {detailsData.overview}
+         vote_average = {detailsData.vote_average}
+         poster_path = {`https://image.tmdb.org/t/p/original${detailsData.poster_path}`}
+         release_date = {detailsData.release_date}
+         runtime = {detailsData.runtime}
+         tagline = {detailsData.tagline}
+         genres = {detailsData.genres}
+         img={`https://image.tmdb.org/t/p/original${detailsData.backdrop_path}`}
       />
     </div>
   );

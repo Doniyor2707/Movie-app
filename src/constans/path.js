@@ -6,6 +6,7 @@ export const authRoutes = {
 // Public
 export const publicRoutes = {
   home: "/",
+  movies: "/movies",
   tvShows: "/tvShows",
   details: "/details/:movieId",
   detailsTvShows: "/detailsTvShows/:tvShowId",

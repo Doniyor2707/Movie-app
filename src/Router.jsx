@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import MainLayout from "./layout/mainLayout/MainLayout";
-import { Home, TvShows, Details, Suggest, Login, PageNotFound, DetailsTvShows } from "./pages";
+import { Home, TvShows, Details, Suggest, Login, PageNotFound, DetailsTvShows, Movies } from "./pages";
 import { Dashboard } from "./layout/dashboard/Dashboard";
 import { authRoutes, publicRoutes } from "./constans/path";
 
@@ -15,6 +15,7 @@ const Router = () => {
         {/* Main Layout */}
         <Route path={publicRoutes.home} element={<MainLayout />}>
           <Route index element={<Home />} />
+          <Route path={publicRoutes.movies} element={<Movies/>}/>
           <Route path={publicRoutes.details} element={<Details />} />
           <Route path={publicRoutes.tvShows} element={<TvShows />} />
           <Route path={publicRoutes.suggestMe} element={<Suggest />} />
