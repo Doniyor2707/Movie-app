@@ -40,7 +40,6 @@ const Details = () => {
     <div>
       <DetailsBanner
         title={detailsData.title}
-        originalTitle = {detailsData.original_title}
         overview = {detailsData.overview}
         vote_average = {detailsData.vote_average}
         poster_path = {`https://image.tmdb.org/t/p/original${detailsData.poster_path}`}

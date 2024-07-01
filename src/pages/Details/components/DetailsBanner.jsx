@@ -3,7 +3,6 @@ import styles from "./detailsBanner.module.css";
 const DetailsBanner = ({
   img,
   title,
-  originalTitle,
   overview,
   vote_average,
   release_date,
@@ -12,7 +11,6 @@ const DetailsBanner = ({
   poster_path,
   genres
 }) => {
-  console.log(poster_path);
   return (
     <>
       <div className={styles.detailsBanner}>
@@ -94,7 +92,8 @@ const DetailsBanner = ({
             Genres
             <div className={styles.detailsMovieData}>{
               genres.map((item)=> (
-                <span key={item.id}>{item.name},</span>
+                <span key={item.id}>
+                  {item.name}</span>
               ))
             }</div>
           </div>

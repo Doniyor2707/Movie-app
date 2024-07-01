@@ -23,7 +23,7 @@ const Router = () => {
         </Route>
 
         {/* Dashboard */}
-        <Route path="/" element={<Dashboard />}>
+        <Route path="/dashboard" element={<Dashboard />}>
           <Route path="main" element={<h1>hello world</h1>} />
         </Route>
 
